@@ -1,0 +1,130 @@
+<html>
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>GWA Calculator</title>
+    <style>
+      @font-face {
+        font-family: "Poppins-Regular";
+        src: url("../fonts/Poppins-Regular.ttf");
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "Poppins-Bold";
+        src: url("../fonts/Poppins-Bold.ttf");
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "Poppins-Medium";
+        src: url("../fonts/Poppins-Medium.ttf");
+        font-weight: normal;
+        font-style: normal;
+      }
+      html,
+      body {
+        text-align: center;
+        width: 300px;
+        margin-top: 5px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+      }
+
+      input {
+        display: block;
+        text-align: center;
+        width: 100px;
+        border-radius: 1em;
+        border-style: solid;
+        border-color: darkgray;
+        border-width: thin;
+      }
+      input:focus {
+        outline: none;
+      }
+
+      table {
+        font-family: Poppins-Medium;
+      }
+
+      thead {
+        color: #6ab7ff;
+        text-align: center;
+      }
+      #val {
+        font-family: Poppins-Bold;
+        font-size: 36px;
+        padding-top: 1em;
+        font-weight: bold;
+        color: cornflowerblue;
+      }
+      h1 {
+        font-family: Poppins-Bold;
+        color: #005cb2;
+      }
+      button {
+        width: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello there!</h1>
+    <div class="row justify-content-center">
+      <div class="col-auto">
+        <table class="table table-borderless" id="grades">
+          <thead>
+            <tr>
+              <th scope="col">Grade</th>
+              <th scope="col">Units</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <input type="input" />
+              </td>
+              <td>
+                <input type="input" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="input" />
+              </td>
+              <td>
+                <input type="input" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="input" />
+              </td>
+              <td>
+                <input type="input" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <button type="button" class="btn btn-outline-primary btn-sm" id="addRow">
+      Add
+    </button>
+    <button
+      type="button"
+      class="btn btn-outline-primary btn-sm"
+      id="computeGWA"
+    >
+      Get
+    </button>
+
+    <script type="text/javascript" src="content.js"></script>
+    <p id="val"></p>
+  </body>
+</html>
