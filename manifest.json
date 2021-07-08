@@ -11,14 +11,8 @@
   "icons": {
     "128": "icon128.png"
   },
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["content.js"]
-    }
-  ],
-  "web_accessible_resources": ["*.ttf"],
   "permissions": ["activeTab"],
+  "web_accessible_resources": ["*.ttf"],
   "background": {
     "script": ["content.js"]
   }
