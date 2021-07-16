@@ -11,7 +11,6 @@
   "icons": {
     "128": "icon128.png"
   },
-  "permissions": ["activeTab"],
   "web_accessible_resources": ["*.ttf"],
   "background": {
     "script": ["content.js"]
